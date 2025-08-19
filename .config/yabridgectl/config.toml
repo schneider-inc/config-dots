@@ -1,0 +1,8 @@
+plugin_dirs = ['/home/justy/.wine/drive_c/Program Files/Common Files/VST3']
+vst2_location = 'centralized'
+no_verify = false
+blacklist = []
+
+[last_known_config]
+wine_version = 'wine-9.21.r0.gf03d32e3 ( TkG Staging Esync Fsync )'
+yabridge_host_hash = 4805906011702719605

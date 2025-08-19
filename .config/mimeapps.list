@@ -1,0 +1,27 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Zen-K6GE92.desktop
+x-scheme-handler/https=userapp-Zen-K6GE92.desktop
+x-scheme-handler/chrome=userapp-Zen-K6GE92.desktop
+text/html=userapp-Zen-K6GE92.desktop
+application/x-extension-htm=userapp-Zen-K6GE92.desktop
+application/x-extension-html=userapp-Zen-K6GE92.desktop
+application/x-extension-shtml=userapp-Zen-K6GE92.desktop
+application/xhtml+xml=userapp-Zen-K6GE92.desktop
+application/x-extension-xhtml=userapp-Zen-K6GE92.desktop
+application/x-extension-xht=userapp-Zen-K6GE92.desktop
+http=zen-browser.desktop
+https=zen-browser.desktop
+application/pdf=app.zen_browser.zen.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Zen-K6GE92.desktop;
+x-scheme-handler/https=userapp-Zen-K6GE92.desktop;
+x-scheme-handler/chrome=userapp-Zen-K6GE92.desktop;
+text/html=userapp-Zen-K6GE92.desktop;
+application/x-extension-htm=userapp-Zen-K6GE92.desktop;
+application/x-extension-html=userapp-Zen-K6GE92.desktop;
+application/x-extension-shtml=userapp-Zen-K6GE92.desktop;
+application/xhtml+xml=userapp-Zen-K6GE92.desktop;
+application/x-extension-xhtml=userapp-Zen-K6GE92.desktop;
+application/x-extension-xht=userapp-Zen-K6GE92.desktop;
+application/pdf=app.zen_browser.zen.desktop;
