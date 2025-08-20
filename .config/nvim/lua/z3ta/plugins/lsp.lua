@@ -11,15 +11,13 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "emmylua_ls",
                     "rust_analyzer", 
-                    "clangd", 
                     "basedpyright", 
                     "arduino_language_server",
                     "elmls",
                     "nil_ls",
                     "ts_ls",
-                    "hyprls",
+                    "hyprls"
                 },
             })
         end
@@ -28,7 +26,7 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            vim.lsp.enable('emmylua_ls')
+            vim.lsp.enable('lua_ls')
             vim.lsp.enable('rust_analyzer')
             vim.lsp.enable('clangd')
             vim.lsp.enable('basedpyright')
@@ -75,8 +73,7 @@ return {
                   vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
                   vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
                   vim.keymap.set('n', '<space>f', function()
-
-                  vim.lsp.buf.format { async = true }
+                      vim.lsp.buf.format { async = true }
                   end, opts)
                 end,
             })
@@ -105,5 +102,12 @@ return {
         end,
     },
     "hrsh7th/cmp-nvim-lsp",
-    "L3MON4D3/LuaSnip"
+    "L3MON4D3/LuaSnip",
+    -- linting
+    {
+        "mfussenegger/nvim-lint",
+        -- config = function()
+        --     require('lint').linters_by_ft =   
+        -- end
+    },
 }
