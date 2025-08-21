@@ -45,8 +45,8 @@
             "ethernet": ["󰈀"],
             "disconnected": ["󰖪"]
         },
-        "on-click": "termite -e nmtui",
-    "tooltip": false
+        "on-click": "nm-applet",
+        "tooltip": true
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
