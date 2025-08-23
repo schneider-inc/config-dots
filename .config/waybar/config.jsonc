@@ -7,10 +7,14 @@
     "hyprland/workspaces",
     "tray",
     "custom/lock",
+    "idle_inhibitor",
     "custom/reboot",
-    "custom/power"
+    "custom/power",
+    "hyprland/language"
+    // "custom/power",
+    // "hyprland/window"
   ],
-  "modules-center": ["hyprland/window"],
+  "modules-center": [],
   "modules-right": [
     "network",
     "battery",
@@ -22,32 +26,39 @@
     "cpu",
     "clock"
   ],
+  "hyprland/language": {
+      "format": "{short}"
+  },
   "hyprland/workspaces": {
     "disable-scroll": false,
-    "all-outputs": true,
     "format": "{icon}",
     "on-click": "activate",
-    "persistent-workspaces": {
-    "*":[1,2,3,4,5,6,7,8,9]
-    },
     "format-icons": {
-      "1": "󰣇",
-      "2": "󰈹",
-      "3": "󰇮",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "󰖳",
+      "1": "1: ",
+      "2": "2: ",
+      "3": "3: 󰭻",
+      "4": "4: 󰌳",
+      "5": "5: 󰇮",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
       "default": ""
     }
   },
   "custom/lock": {
-  "format": "<span color='#00FFFF'>  </span>",
-  "on-click": "hyprlock",
-  "tooltip": true,
-  "tooltip-format": "锁屏"
+    "format": "<span color='#00FFFF'>  </span>",
+    "on-click": "hyprlock",
+    "tooltip": true,
+    "tooltip-format": "锁屏"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "tooltip": false
   },
   "custom/reboot": {
     "format": "<span color='#FFD700'>  </span>",
@@ -120,10 +131,8 @@
   },
   "clock": {
     "interval": 1,
-    "timezone": "Asia/Chengdu",
-    "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
-    "tooltip": true,
-    "tooltip-format": "{:L%Y 年 %m 月 %d 日, %A}"
+    "format": "<span color='#BF00FF'>  </span>{:%a %d %b %H:%M}",
+    "tooltip": true
   },
   "tray": {
     "icon-size": 17,

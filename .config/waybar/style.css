@@ -28,7 +28,8 @@
 }
 
 #clock,
-#custom-power{
+#language{
+/* #custom-power{ */
   background-color: rgba(15,27,53,0.9);
   margin-top: 6px; /* 与屏幕顶部留出距离 */
   margin-right: 6px;
@@ -38,7 +39,8 @@
   border-width: 0px;
 }
 
-#network,
+/* #network, */
+/* #language, */
 #custom-lock{
   background-color: rgba(15,27,53,0.9);
   margin-top: 6px; /* 与屏幕顶部留出距离 */
@@ -50,12 +52,15 @@
 }
 
 #custom-reboot,
+#idle_inhibitor,
+#network,
 #bluetooth,
 #battery,
 #pulseaudio,
 #backlight,
 #custom-temperature,
 #memory,
+#custom-power,
 #cpu{
   background-color: rgba(15,27,53,0.9);
   margin-top: 6px; /* 与屏幕顶部留出距离 */
@@ -73,6 +78,7 @@
 /* 鼠标悬停变亮一点 */
 #bluetooth:hover,
 #network:hover,
+#idle_inhibitor:hover,
 /*#tray:hover,*/
 #backlight:hover,
 #battery:hover,
