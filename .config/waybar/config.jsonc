@@ -31,19 +31,27 @@
   },
   "hyprland/workspaces": {
     "disable-scroll": false,
-    "format": "{icon}",
+    "format": "{name}{icon} {windows}",
+    "format-window-separator": "|",
+    "window-rewrite-default": "{class}",
+    "window-rewrite": {
+      "title<.*YouTube.*>": "",
+      "class<vivaldi-stable>": "",
+      "class<kitty>": "",
+      "class<tidal-hifi>": "Tidal"
+    },
     "on-click": "activate",
     "format-icons": {
-      "1": "1: ",
-      "2": "2: ",
-      "3": "3: 󰭻",
-      "4": "4: 󰌳",
-      "5": "5: 󰇮",
-      "6": "6",
-      "7": "7",
-      "8": "8",
-      "9": "9",
-      "default": ""
+      "1": " ",
+      // "2": "2: ",
+      "3": " 󰭻",
+      "4": " 󰌳",
+      "5": " 󰇮",
+      // "6": "6",
+      // "7": "7",
+      // "8": "8",
+      // "9": "9",
+      "default": ""
     }
   },
   "custom/lock": {
@@ -75,10 +83,10 @@
   "network": {
     "format-wifi": "<span color='#00FFFF'> 󰤨 </span>{essid} ",
     "format-ethernet": "<span color='#7FFF00'> </span>Wired ",
-    "tooltip-format": "<span color='#FF1493'> 󰅧 </span>{bandwidthUpBytes}  <span color='#00BFFF'> 󰅢 </span>{bandwidthDownBytes}",
+    "tooltip-format": "{ipaddr}/{cidr} {icon}",
     "format-linked": "<span color='#FFA500'> 󱘖 </span>{ifname} (No IP) ",
     "format-disconnected": "<span color='#FF4040'>  </span>Disconnected ",
-    "format-alt": "<span color='#00FFFF'> 󰤨 </span>{signalStrength}% ",
+    "format-alt": "<span color='#FF1493'> 󰅧 </span>{bandwidthUpBytes}  <span color='#00BFFF'> 󰅢 </span>{bandwidthDownBytes}",
     "interval": 1
   },
   "battery": {

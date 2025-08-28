@@ -12,7 +12,6 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "rust_analyzer", 
-                    "basedpyright", 
                     "arduino_language_server",
                     "elmls",
                     "nil_ls",
@@ -29,7 +28,7 @@ return {
             vim.lsp.enable('lua_ls')
             vim.lsp.enable('rust_analyzer')
             vim.lsp.enable('clangd')
-            vim.lsp.enable('basedpyright')
+            vim.lsp.enable('pyright')
             vim.lsp.enable('arduino_language_server')
             vim.lsp.enable('elmls')
             vim.lsp.enable('nil_ls')
@@ -41,6 +40,21 @@ return {
                 init_options = {
                     fallbackFlags = { '-std=c++17' },
                 },
+            })
+
+            vim.lsp.config('pyright', {
+                settings = {
+                    python = {
+                        analysis = {
+                            typeCheckingMode = "basic", -- Change to 'basic' for less strict checking
+                            diagnosticSeverityOverrides = {
+                                error = "Warning"
+                            },
+                            autoImportCompletions = true, -- Enable automatic import completions
+                            useLibraryCodeForTypes = true, -- Use types from the Python standard library and installed packages
+                        }
+                    }
+                }
             })
             -- vim.lsp.config('
 
